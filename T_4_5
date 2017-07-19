@@ -1,0 +1,26 @@
+package Week1;
+
+import java.util.Scanner;
+
+/*
+		4.5. Вводим 2 числа. Если первое число больше второго, то вывести на экран разницу чисел. Если второе больше, то выводим сумму.
+
+ */
+public class T_4_5 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+
+        System.out.println(action(a,b));
+
+    }
+    public static int action(int a, int b){
+        if(a>b) return a-b;
+        if(a<b) return a+b;
+
+        throw new IllegalArgumentException("a = b");
+
+    }
+
+}
