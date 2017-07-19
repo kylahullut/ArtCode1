@@ -1,0 +1,23 @@
+////////////////////
+package Week1;
+/*
+Вводим число с плавающей точкой с консоли, и проверяем лежит ли оно в диапазоне от 0 до 1
+ */
+
+
+import java.util.Scanner;
+
+public class FloatingPoint {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double a = scanner.nextDouble();
+
+        System.out.println(range(a));
+    }
+
+    public static double range(double a) {
+        if (a >= 0 && a <= 1)
+            return a;
+        return 0;
+    }
+}
