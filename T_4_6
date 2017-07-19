@@ -1,0 +1,27 @@
+package Week1;
+
+import java.util.Scanner;
+
+/*
+4.6. Вводим два числа, вывести их суму, если она в диапазоне от 11 до 19.
+ */
+
+
+public class T_4_6 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int sum = a + b;
+
+        System.out.println(sum1(sum));
+
+    }
+
+    public static int sum1(int sum) {
+        if (sum > 10 && sum < 20)
+            return sum;
+        return 0;
+    }
+}
+
