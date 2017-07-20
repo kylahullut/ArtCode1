@@ -1,0 +1,25 @@
+package Week1;
+
+/*
+5.2. Вычислить факториал числа.
+ */
+
+
+import java.util.Scanner;
+
+public class T_5_2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+
+        System.out.println(factorial(n));
+
+    }
+    public static long factorial(int n) {
+        long factorial = 1;
+        for (int i = n; i>0 ; i--) {
+            factorial *=i;
+        }
+        return factorial;
+    }
+}
