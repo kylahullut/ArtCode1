@@ -1,0 +1,31 @@
+package Week1;
+
+import java.util.Scanner;
+
+/*
+4.7. Вводим два числа, если одно из них делиться на другое без остатка, то выводим тру и показываем результат деления (целую часть от деления  и остачу)
+				в другом случае выводим false и показываем результат деления (целую часть от деления  и остачу)
+ */
+public class T_4_7 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int n1 = a % b;
+        int n2 = b % a;
+        int n3 = a / b;
+        int n4 = b / a;
+
+        if (n1 == 0) {
+            System.out.println("true " + n3);
+        } else if (n2 == 0) {
+            System.out.println("true " + n4);
+        } else if (n1 != 0) {
+            System.out.println("false " + n3 + "." + n1);
+        } else if (n2 != 0) {
+            System.out.println("false " + n4 + "." + n2);
+        }
+        
+    }
+    
+}
