@@ -1,0 +1,22 @@
+package Week1;
+
+/*
+5.1. Перевод с числа с десятичной системы счисления в двоичную, и наоборот. Пользователь сам вводит число
+ */
+
+
+import java.util.Scanner;
+
+public class T_5_1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int a = scanner.nextInt();
+        System.out.println(Integer.toBinaryString(a));
+
+        String i = scanner.next();
+        System.out.println(Integer.parseInt(i,2));
+
+
+    }
+}
