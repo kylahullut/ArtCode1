@@ -1,0 +1,27 @@
+package Week1;
+
+import java.util.Scanner;
+
+/*
+4.8. Вводим два числа, сравнить последнии цифры этих чисел (пользоваться оператором %)
+			124    4    -   true
+			1456   567  -   false
+			1      2    -   false
+			18     98   -   true
+ */
+ 
+ 
+public class T_4_8 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+
+        System.out.println(bn(a, b));
+    }
+
+    public static boolean bn(int a, int b) {
+        if(a%10 == b%10) return true;
+        return false;
+    }
+}
