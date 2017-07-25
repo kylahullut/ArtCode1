@@ -10,6 +10,7 @@ public class c4_3 {
         int a = scanner.nextInt();
         System.out.println(remainder(a));
     }
+    
     public static int remainder(int a){
         if(a % 7 == 0)
             return a*2;
