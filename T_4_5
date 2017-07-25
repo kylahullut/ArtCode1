@@ -15,6 +15,7 @@ public class T_4_5 {
         System.out.println(action(a,b));
 
     }
+    
     public static int action(int a, int b){
         if(a>b) return a-b;
         if(a<b) return a+b;
