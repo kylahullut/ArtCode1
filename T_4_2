@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 
 public class MinMax4_2 {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int a = scanner.nextInt();
@@ -16,7 +16,6 @@ public class MinMax4_2 {
         int c = scanner.nextInt();
 
         System.out.println("max = " + max(a, b, c) + "\n" + "min = " + min(a, b, c));
-
 
     }
 
@@ -28,8 +27,7 @@ public class MinMax4_2 {
         if (c > a && c > b)
             return c;
 
-
-        return 0;
+        throw new IllegalArgumentException("Use different numbers!");
     }
 
     public static int min(int a, int b, int c) {
@@ -40,6 +38,9 @@ public class MinMax4_2 {
         if (c < a && c < b)
             return c;
 
-        return 0;
+        throw new IllegalArgumentException("Use different numbers!");
+
     }
+
+
 }
