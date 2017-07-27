@@ -1,0 +1,35 @@
+package Week1;
+
+import java.util.Scanner;
+
+/*
+2) Ввести с клавиатуры три числа, положительные возвести в куб, а отрица-
+тельные заменить на 0.
+ */
+public class Add12 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+
+        System.out.println("num1 = " + a1(a) + "\n" + "num2 = " + b1(b) + "\n" + "num3 = " + c1(c));
+
+    }
+
+    public static int a1(int a) {
+        if (a >= 0) return (int) Math.pow(a, 3);
+        return 0;
+    }
+
+    public static int b1(int b){
+        if (b>=0)return (int) Math.pow(b, 3);
+        return 0;
+    }
+
+    public static int c1(int c){
+        if(c>=0)return (int) Math.pow(c, 3);
+        return 0;
+    }
+}
